@@ -7,13 +7,13 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #dee2e6;
-  color: #212529;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0 10px;
+body{
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  background-color:#1B3C53;
+  color:#E3E3E3;
+  line-height:1.6;
+  margin:0;
+  padding:0 10px;
 }
 
 h1, h2, h3 {
@@ -124,3 +124,4 @@ p {
     font-size: 14px;
   }
 }
+
