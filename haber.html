@@ -159,7 +159,7 @@
 
 
 <img src="haber.png" alt="Haber Process" class="pop-up">
- <section id="ammonia-full" class="content-section">
+<section id="ammonia-full" class="content-section">
   <h2>Производство Аммиака и Процесс Габера‑Боша</h2>
 
   <p>
@@ -167,130 +167,159 @@
     полимеров и других химических продуктов. Производится главным образом методом Габера‑Боша.
   </p>
 
-  <!-- Диаграмма процесса -->
-  <div class="image-container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Haber_Bosch_process.png"
-         alt="Диаграмма процесса Габера‑Боша" style="max-width:100%; height:auto; display:block; margin:0 auto; border:1px solid #ccc;">
+  <!-- Диаграмма процесса (SVG) -->
+  <div class="image-container" style="text-align:center; margin:20px 0;">
+    <svg width="600" height="250" xmlns="http://www.w3.org/2000/svg">
+      <!-- Стадии процесса -->
+      <rect x="50" y="50" width="120" height="50" fill="#4CAF50"/>
+      <text x="110" y="80" text-anchor="middle" fill="#fff" font-size="14">Азот + Водород</text>
+
+      <rect x="220" y="50" width="120" height="50" fill="#2196F3"/>
+      <text x="280" y="80" text-anchor="middle" fill="#fff" font-size="14">Реактор</text>
+
+      <rect x="390" y="50" width="120" height="50" fill="#FFC107"/>
+      <text x="450" y="80" text-anchor="middle" fill="#000" font-size="14">Аммиак (NH₃)</text>
+
+      <!-- Стрелки -->
+      <line x1="170" y1="75" x2="220" y2="75" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+      <line x1="340" y1="75" x2="390" y2="75" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="#000"/>
+        </marker>
+      </defs>
+    </svg>
     <p class="caption">Схема процесса синтеза аммиака — N₂ + 3H₂ → 2NH₃</p>
   </div>
 
-  <!-- Видеоролик -->
+  <!-- Видео оставляем как iframe -->
   <div class="video-container" style="text-align:center; margin:30px 0;">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Cl3OvIU3pBE" frameborder="0" allowfullscreen></iframe>
     <p class="caption">Видео: процесс синтеза аммиака методом Габера‑Боша</p>
   </div>
 
-  <!-- Свойства аммиака -->
-  <h3>Свойства и сырьё</h3>
+  <h3>Свойства аммиака</h3>
   <ul>
     <li>Формула: <strong>NH₃</strong>. Газ бесцветный с резким запахом.</li>
-    <li>Основное сырьё: азот (из воздуха) и водород (из природного газа или метана).</li>
+    <li>Основное сырьё: азот (из воздуха) и водород (из природного газа).</li>
     <li>Процесс проходит при высоком давлении (~200 атм) и температуре (~400‑500 °C).</li>
     <li>Аммиак — компонент удобрений и химической промышленности.</li>
   </ul>
 
-  <!-- Карта -->
   <h3>Карта производителей аммиака в Казахстане</h3>
   <div class="map-container" style="text-align:center; margin:20px 0;">
-    <iframe width="600" height="450" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_EMBED_KEY&q=АО+КазАзот,Актау,Казахстан" allowfullscreen></iframe>
-    <p class="caption">АО «КазАзот» — крупнейший производитель аммиака в Казахстане</p>
+    <iframe width="600" height="450" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_EMBED_KEY&q=АО+КазАзот,Актау,Казахстан"
+      allowfullscreen>
+    </iframe>
+    <p class="caption">АО «КазАзот» — крупнейший производитель аммиака</p>
   </div>
 </section>
 
 <section id="haber-full" class="content-section">
-  <h2>Производство аммиака методом Габера‑Боша</h2>
-
-  <p>
-    Аммиак (NH<sub>3</sub>) — важное химическое сырьё для удобрений, азотной кислоты и промышленной химии. 
-    В промышленности его получают методом Габера‑Боша, который включает несколько последовательных стадий.
-  </p>
-
-  <h3>Последовательные стадии процесса</h3>
+  <h2>Последовательные стадии производства аммиака</h2>
   <ol>
-    <li>
-      <strong>Подготовка водорода:</strong> 
-      <p>Из природного газа (CH<sub>4</sub>) получают водород через паровую конверсию: CH<sub>4</sub> + H<sub>2</sub>O → CO + 3H<sub>2</sub>.</p>
-    </li>
-    <li>
-      <strong>Очистка газов:</strong> 
-      <p>Удаление примесей (CO, CO<sub>2</sub>, серосодержащих соединений), которые могут деактивировать катализатор.</p>
-    </li>
-    <li>
-      <strong>Смешивание газов:</strong> 
-      <p>Водород и азот в молярном соотношении 3:1.</p>
-    </li>
-    <li>
-      <strong>Синтез аммиака:</strong> 
-      <p>Реакция проходит при температуре 400–500 °C, давлении 150–250 атм, с катализатором Fe (железо):</p>
-      <p style="text-align:center; font-weight:bold;">N<sub>2</sub> + 3H<sub>2</sub> ⇌ 2NH<sub>3</sub></p>
-    </li>
-    <li>
-      <strong>Конденсация и отделение аммиака:</strong> 
-      <p>Аммиак охлаждается и отделяется, неизреагировавшие газы возвращаются в реактор.</p>
-    </li>
+    <li><strong>Подготовка водорода:</strong> CH₄ + H₂O → CO + 3H₂</li>
+    <li><strong>Очистка газов:</strong> удаление примесей CO, CO₂, серы</li>
+    <li><strong>Смешивание газов:</strong> водород + азот (3:1)</li>
+    <li><strong>Синтез:</strong> N₂ + 3H₂ ⇌ 2NH₃ (катализатор Fe, 400–500 °C, 150–250 атм)</li>
+    <li><strong>Конденсация и отделение:</strong> охлаждение и сбор аммиака</li>
   </ol>
 
-  <h3>Схема процесса</h3>
-  <div class="image-container">
-    <img src="images/haber-process.png" alt="Схема процесса Габера‑Боша" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+  <!-- SVG процесс промышленного синтеза -->
+  <div class="image-container" style="text-align:center; margin:20px 0;">
+    <svg width="600" height="250" xmlns="http://www.w3.org/2000/svg">
+      <rect x="50" y="50" width="100" height="50" fill="#4CAF50"/>
+      <text x="100" y="80" text-anchor="middle" fill="#fff" font-size="14">Водород</text>
+
+      <rect x="200" y="50" width="100" height="50" fill="#2196F3"/>
+      <text x="250" y="80" text-anchor="middle" fill="#fff" font-size="14">Азот</text>
+
+      <rect x="350" y="50" width="100" height="50" fill="#FFC107"/>
+      <text x="400" y="80" text-anchor="middle" fill="#000" font-size="14">Аммиак</text>
+
+      <line x1="150" y1="75" x2="200" y2="75" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+      <line x1="300" y1="75" x2="350" y2="75" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="#000"/>
+        </marker>
+      </defs>
+    </svg>
     <p class="caption">Основные стадии промышленного синтеза аммиака</p>
   </div>
+</section>
 
-  <h3>Анимация реакции</h3>
-  <div class="animation-container" style="text-align:center; margin:30px 0;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cl3OvIU3pBE" frameborder="0" allowfullscreen></iframe>
-    <p class="caption">Анимация: процесс синтеза аммиака методом Габера‑Боша</p>
+<section id="ammonia-application" class="content-section">
+  <h2>Применение аммиака в промышленности</h2>
+
+  <!-- SVG для удобрений -->
+  <div class="image-container" style="text-align:center; margin:20px 0;">
+    <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="50" y="50" width="100" height="50" fill="#4CAF50"/>
+      <text x="100" y="80" fill="#fff" text-anchor="middle">Аммиак</text>
+      <rect x="250" y="50" width="100" height="50" fill="#FFC107"/>
+      <text x="300" y="80" fill="#000" text-anchor="middle">Удобрения</text>
+      <line x1="150" y1="75" x2="250" y2="75" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="#000"/>
+        </marker>
+      </defs>
+    </svg>
+    <p class="caption">Аммиак → удобрения</p>
   </div>
 
-  <h3>Основные принципы промышленного производства</h3>
-  <ul>
-    <li>Высокое давление и температура для смещения равновесия реакции в сторону аммиака.</li>
-    <li>Использование катализатора (железо с промоторами) для ускорения реакции.</li>
-    <li>Циркуляция неизреагировавших газов для повышения выхода продукта.</li>
-    <li>Энергетическая эффективность: тепло реакции используется для подогрева поступающих газов.</li>
-  </ul>
+  <!-- SVG для химической промышленности -->
+  <div class="image-container" style="text-align:center; margin:20px 0;">
+    <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="75" r="35" fill="#2196F3"/>
+      <text x="100" y="80" fill="#fff" text-anchor="middle">Аммиак</text>
+      <rect x="250" y="50" width="120" height="50" fill="#FF5722"/>
+      <text x="310" y="80" fill="#fff" text-anchor="middle">Азотная кислота</text>
+      <line x1="135" y1="75" x2="250" y2="75" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+    </svg>
+    <p class="caption">Аммиак → азотная кислота</p>
+  </div>
+
+  <!-- SVG для холодильной промышленности -->
+  <div class="image-container" style="text-align:center; margin:20px 0;">
+    <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+      <rect x="50" y="50" width="100" height="50" fill="#4CAF50"/>
+      <text x="100" y="80" fill="#fff" text-anchor="middle">Аммиак</text>
+      <rect x="250" y="50" width="120" height="50" fill="#03A9F4"/>
+      <text x="310" y="80" fill="#fff" text-anchor="middle">Холодильная установка</text>
+      <line x1="150" y1="75" x2="250" y2="75" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+    </svg>
+    <p class="caption">Аммиак → хладагент</p>
+  </div>
 </section>
 
 
-  <section id="ammonia-application" class="content-section">
-  <h2>Применение аммиака в промышленности</h2>
-
-  <p>
-    Аммиак (NH<sub>3</sub>) используется в различных отраслях промышленности. Ниже приведены ключевые направления с конкретными примерами.
-  </p>
-
-  <h3>Основные области применения</h3>
-  <ul>
-    <li>
-      <strong>Производство удобрений:</strong> аммиак является сырьём для синтеза нитратов и карбамида (мочевины).  
-      <div class="image-container">
-        <img src="images/fertilizer-diagram.png" alt="Схема производства удобрений из аммиака" style="max-width:100%; height:auto;">
-        <p class="caption">Схема превращения аммиака в азотные удобрения</p>
-      </div>
-    </li>
-    <li>
-      <strong>Химическая промышленность:</strong> аммиак используется для производства азотной кислоты, пластмасс и взрывчатых веществ.  
-      <div class="image-container">
-        <img src="images/chemical-industry.png" alt="Применение аммиака в химической промышленности" style="max-width:100%; height:auto;">
-        <p class="caption">Схема использования аммиака в производстве азотной кислоты</p>
-      </div>
-    </li>
-    <li>
-      <strong>Холодильная промышленность:</strong> аммиак применяется как хладагент в промышленных холодильных установках.  
-      <div class="diagram-container">
-        <img src="images/refrigeration.png" alt="Использование аммиака в холодильной технике" style="max-width:100%; height:auto;">
-        <p class="caption">Диаграмма работы холодильной установки с аммиаком</p>
-      </div>
-    </li>
-  </ul>
-
+  <section id="ammonia-usage-chart" class="content-section">
   <h3>Диаграмма распределения применения аммиака</h3>
   <div class="chart-container" style="text-align:center; margin:30px 0;">
-    <img src="images/ammonia-usage-chart.png" alt="Диаграмма применения аммиака" style="max-width:100%; height:auto;">
+    <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <!-- Фон -->
+      <circle cx="200" cy="200" r="150" fill="#eee"/>
+
+      <!-- Сегменты диаграммы -->
+      <path d="M200,200 L200,50 A150,150 0 0,1 320,110 Z" fill="#4CAF50"/>
+      <path d="M200,200 L320,110 A150,150 0 0,1 280,320 Z" fill="#FFC107"/>
+      <path d="M200,200 L280,320 A150,150 0 0,1 80,280 Z" fill="#03A9F4"/>
+      <path d="M200,200 L80,280 A150,150 0 0,1 200,50 Z" fill="#FF5722" opacity="0.5"/>
+
+      <!-- Подписи -->
+      <text x="260" y="90" font-size="14" fill="#fff">Удобрения</text>
+      <text x="310" y="200" font-size="14" fill="#fff">Химия</text>
+      <text x="180" y="320" font-size="14" fill="#fff">Холодильная техника</text>
+      <text x="100" y="180" font-size="14" fill="#000">Прочее</text>
+    </svg>
     <p class="caption">Пример распределения применения аммиака в промышленности</p>
   </div>
 </section>
-
 
 <h3 class="pop-up">Requirements for Reaction</h3>
 
@@ -468,6 +497,7 @@
 
 </body>
 </html>
+
 
 
 
